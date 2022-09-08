@@ -102,13 +102,14 @@ p {
 @media only screen and (min-width: 768px) {
   main {
     width: 400px;
-    height: 250px;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: [row1-start] 8% [row1-end] 50px [third-line] 60px [fourth-line] 70px [fifth-line] auto;
+    grid-template-rows: [row1-start] 18px [row1-end] 40px [third-line] 60px [fourth-line] 75px [fifth-line] auto [last-line];
   }
   
   div {
+    display: grid;
+    grid-column-start: 1;
     justify-self: start;
   }
 
@@ -142,17 +143,31 @@ p {
     font-size: 12px;
     color: darkslategray;
     text-align: left;
-    line-height: 1.6;
+    line-height: 1.2;
     align-self: center;
-    margin: 0 10px;
+    margin: 10px;
   }
-
+  
   #brand > p {
     margin: 0;
   }
 
+  #offer {
+    display: grid;
+    text-align: left;
+    padding: 0 10px;
+    align-self: center;
+  }
+
+  #offer > p {
+    height: 10px;
+  }
+
   #contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
     grid-column-start: 1;
     grid-row: 5 / 6;
+    margin: 0;
   }
 }
