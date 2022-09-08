@@ -102,5 +102,17 @@ p {
 @media only screen and (min-width: 768px) {
   main {
     width: 400px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: [row1-start] 8% [row1-end] 175px [third-line] auto;
+  }
+
+  #brand {
+    display: contents;
+  }
+
+  div {
+    justify-self: start;
   }
 }
