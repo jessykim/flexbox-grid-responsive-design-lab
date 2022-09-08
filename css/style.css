@@ -30,38 +30,45 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   width: 250px;
   height: 400px;
 }
 
-img {
+/* img {
+  display: flex;
   border-radius: 50%;
   border: 3px solid black;
-  width: 60px;
+  width: 50px;
   align-self: center;
-}
+} */
 
 h1 {
   font-size: 15px;
-  align-self: center;
+  display: flex;
+  
 }
 
 div {
   color: lightgray;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
   margin: 5px;
 }
 
 #offer {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
 
 main > section#occupation {
   background-color: rgba(211, 211, 211, 0.5);
-  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
 
 #contact {
