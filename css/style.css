@@ -108,6 +108,12 @@ p {
     grid-template-rows: [row1-start] 8% [row1-end] 175px [third-line] auto;
   }
 
+  img {
+    grid-column-start: 1;
+    justify-self: center;
+    align-self: center;
+  }
+
   #brand {
     display: contents;
   }
