@@ -107,28 +107,35 @@ p {
     grid-template-columns: 40% 60%;
     grid-template-rows: [row1-start] 8% [row1-end] 50px [third-line] 60px [fourth-line] 70px [fifth-line] auto;
   }
-
-  img {
-    grid-column-start: 1;
-    place-self: center;
-  }
-
-  .right-container {
-    display: grid;
-    justify-self: start;
-  }
-
-  #brand {
-    display: contents;
-    text-align: left;
-  }
-
+  
   div {
     justify-self: start;
   }
 
+  h1 {
+    font-size: 25px;
+    display: grid;
+    align-self: center;
+    text-align: left;
+  }
+
+  img {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row: span 3; 
+    place-self: center;
+  }
+
+  #brand {
+    display: grid;
+    text-align: left;
+    grid-column-start: 2;
+    grid-row-start: 4 / 5;
+  }
+
+
   #contact {
     grid-column-start: 1;
-    grid-row: 3 / 4;
+    grid-row: 5 / 6;
   }
 }
