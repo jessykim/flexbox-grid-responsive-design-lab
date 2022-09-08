@@ -24,3 +24,14 @@ body {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  flex-wrap: wrap;
+  width: 160px;
+  height: 250px;
+  margin: 50px;
+}
