@@ -37,8 +37,10 @@ main {
 
 img {
   border-radius: 50%;
-  border: 3px solid black;
+  border: 2px solid black;
   width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 h1 {
